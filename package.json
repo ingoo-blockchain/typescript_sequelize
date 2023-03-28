@@ -1,0 +1,27 @@
+{
+    "dependencies": {
+        "@types/chai": "^4.3.3",
+        "chai": "^4.3.6",
+        "dotenv": "^16.0.3",
+        "mysql2": "^2.3.3",
+        "sequelize": "^6.25.3",
+        "sequelize-typescript": "^2.1.5"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.0",
+        "@types/node": "^18.11.3",
+        "mocha": "^10.1.0",
+        "ts-node": "^10.9.1"
+    },
+    "name": "sequelize_setting",
+    "description": "tsconfig.json 설정하기.",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "ts-node ./src/index.ts",
+        "test": "node_modules/.bin/mocha $(find ./ -name '*.ts') --recursive -w",
+        "mocha": "mocha ./tests/*.spec.ts -r ts-node/register"
+    },
+    "author": "",
+    "license": "ISC"
+}
